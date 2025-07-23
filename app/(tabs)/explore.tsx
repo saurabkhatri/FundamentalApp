@@ -1,9 +1,11 @@
 import { View, Text, StyleSheet } from "react-native";
+import { Link } from "expo-router";
 
 export default function Home() {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Home Page</Text>
+      <Link href="/products">Go to Products</Link>
     </View>
   );
 }
